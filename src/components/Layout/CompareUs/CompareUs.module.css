@@ -1,0 +1,73 @@
+.compareContainer{
+    background: #f6f4f8;
+    padding: 80px 0;
+}
+.compareAreaBox{
+    margin-bottom: 50px;
+}
+.compareTitle{
+    font-size: 40px;
+    font-weight: 300;
+    color: #000;
+}
+.progressBar{
+    height: 5px;
+    width: 90px;
+    background: #cdf1d8;
+    margin: 20px 0 25px;
+    position: relative;
+    border-radius: 30px;
+}
+.progressBar:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -2.7px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #44ce6f;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: MOVE-BG;
+}
+@keyframes MOVE-BG {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(88px);
+    }
+}
+.compareSubText{
+    line-height: 1.7;
+    color: #6084a4;
+    font-weight: 300;
+    font-size: 15px;
+}
+.comparisonsTable{
+    background: #FFF;
+    box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.05);
+}
+.comparisonsTable table{
+    margin-bottom: 0px;
+}
+.comparisonsTable table thead th, .comparisonsTable table tbody td{
+    vertical-align: middle;
+    border: none;
+    color: #000;
+    padding: 16px 20px;
+    font-family: "Raleway", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    text-align: center;
+}
+.comparisonsTable table tbody td{
+    border-bottom: 1px solid #EEE;
+    font-size: 15px;
+}
+.comparisonsTable table tbody td:nth-child(1), .comparisonsTable table thead th:nth-child(1){
+    text-align: start;
+    padding-left: 50px;
+}

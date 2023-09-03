@@ -1,0 +1,121 @@
+.ourFeatureBox{
+    padding: 80px 0px;
+    background: #F7FAFD;
+}
+.FeatureContainer{
+    margin-bottom: 50px;
+}
+.compareTitle{
+    font-size: 40px;
+    font-weight: 300;
+    color: #000;
+}
+.progressBar{
+    height: 5px;
+    width: 90px;
+    background: #cdf1d8;
+    margin: 20px 0 25px;
+    position: relative;
+    border-radius: 30px;
+}
+.progressBar:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -2.7px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #44ce6f;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: MOVE-BG;
+}
+@keyframes MOVE-BG {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(88px);
+    }
+}
+.compareSubText{
+    line-height: 1.7;
+    color: #6084a4;
+    font-weight: 300;
+    font-size: 15px;
+}
+.featureBoxes{
+    gap: 30px 0px;
+}
+.singleFeature{
+    border-radius: 5px;
+    background: #FFF;
+    padding: 35px;
+    z-index: 2;
+}
+.singleFeature:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(238, 9, 121) 0%, rgb(255, 106, 0) 100%);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.singleFeature:hover:before{
+    width: 100%;
+}
+.featureIconBox{
+    width: 65px;
+    height: 65px;
+    background-color: rgba(231, 70, 69, 0.2);
+    border-radius: 50%;
+    color: #ee0979;
+    transition: 0.5s;
+    margin-bottom: 18px;   
+}
+.featureIconBox i:before{
+    font-size: 30px;
+}
+.featureIconBox.envelope{
+    background-color: rgba(247, 138, 203, 0.3);
+    color: #f78acb;
+}
+.featureIconBox.menu{
+    background-color: #cdf1d8;
+    color: #44ce6f;
+}
+.featureIconBox.info{
+    color: #c679e3;
+    background: #edc3fc;
+}
+.featureIconBox.cursor{
+    color: #eb6b3d;
+    background: rgba(235, 107, 61, 0.3);
+}
+.singleFeature:hover .featureIconBox{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    color: #ee0979;
+    background-color: #ffffff;
+}
+.featureBoxTitle{
+    transition: 0.5s;
+    font-size: 22px;
+    font-weight: 300;
+    color: #000;
+}
+.featureBoxDesc{
+    font-size: 14px;
+    transition: 0.5s;
+    color: #000;
+    padding-top: 10px;
+}
+.singleFeature:hover .featureBoxTitle, .singleFeature:hover .featureBoxDesc{
+    color: #FFF;
+}

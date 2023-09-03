@@ -1,0 +1,110 @@
+.featureContainer{
+    z-index: 1;
+    margin-top: -100px;
+}
+.featureRowBox{
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+}
+.featureBoxes{
+    padding: 115px 25px 40px 25px;
+}
+.featureBoxes .piggyBank, .featureBoxes .encryption, .featureBoxes .wallet, .featureBoxes .shield{
+    transition: 0.4s;
+    color: #fb7756;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: -12px;
+}
+.featureBoxes .encryption{
+    color: #facd60;
+}
+.featureBoxes .wallet{
+    color: #1ac0c6;
+}
+.featureBoxes .shield{
+    color: #ee0979;
+}
+.featureBoxes .piggyBank::before, .featureBoxes .encryption:before, .featureBoxes .wallet:before, .featureBoxes .shield:before{
+    font-size: 55px;
+}
+.featureBoxTItle{
+    transition: 0.4s;
+    font-size: 22px;
+    font-weight: 300;
+}
+.featureDesc{
+    font-size: 14px;
+    margin-top: 12px;
+    transition: 0.4s;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.ReadMoreBtn{
+    background: linear-gradient(90deg, rgb(238, 9, 121) 0%, rgb(255, 106, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    font-size: 15px;
+    font-weight: 400;
+}
+.featureBoxes:hover .ReadMoreBtn{
+    opacity: 1;
+    visibility: visible;
+    bottom: 23px;
+}
+.featureBoxes:hover .ReadMoreBtn:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 0;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    height: 1px;
+    background: linear-gradient(90deg, rgb(238, 9, 121) 0%, rgb(255, 106, 0) 100%);
+}
+.featureBoxes:hover .ReadMoreBtn:hover:before {
+    width: 100%;
+}
+.featureBoxes:hover .featureBoxTItle{
+    -webikit-transform: translateY(-20px);
+    transform: translateY(-20px);
+}
+.featureBoxes:hover .featureDesc{
+    -webikit-transform: translateY(-20px);
+    transform: translateY(-20px);
+}
+.featureBoxes:hover .piggyBank, .featureBoxes:hover .encryption, .featureBoxes:hover .wallet, .featureBoxes:hover .shield{
+    top: 23px;
+    animation: iconTop 0.4s ease-in-out;
+    -webkit-animation: iconTop 0.4s ease-in-out;
+}
+@keyframes iconTop {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    25% {
+        opacity: 0;
+        transform: translate(-50%, -70%);
+    }
+    50% {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
