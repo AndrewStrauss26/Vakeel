@@ -1,18 +1,17 @@
-.paymentContainer {
-    padding: 80px 0px;
+.funfactArea {
+    padding: 80px 0;
+    background-image: url(../../../assets/images/map.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
-.invoicingContent {
-    margin-left: auto;
-    max-width: 635px;
+.FeatureContainer {
+    margin-bottom: 50px;
 }
-
-.invoicingTitle {
+.compareTitle {
     font-size: 40px;
     font-weight: 300;
     color: #000;
 }
-
 .progressBar {
     height: 5px;
     width: 90px;
@@ -21,7 +20,6 @@
     position: relative;
     border-radius: 30px;
 }
-
 .progressBar:before {
     content: "";
     position: absolute;
@@ -36,7 +34,6 @@
     animation-iteration-count: infinite;
     animation-name: MOVE-BG;
 }
-
 @keyframes MOVE-BG {
     from {
         transform: translateX(0);
@@ -46,15 +43,47 @@
         transform: translateX(88px);
     }
 }
-
-.invoicingSubText {
+.compareSubText {
     line-height: 1.7;
-    margin-bottom: 20px;
     color: #6084a4;
     font-weight: 300;
     font-size: 15px;
 }
-.invoicingBtn {
+.featureCounter {
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.featureCounterBox {
+    width: calc(25% - 10px);
+}
+.funCounter {
+    color: #ee0979;
+    margin-bottom: 2px;
+    font-size: 35px;
+    font-weight: 300;
+}
+.funfactLabel {
+    color: #6084a4;
+    font-weight: 300;
+    font-size: 15px;
+}
+.contactCtaBox {
+    padding: 30px;
+    gap: 50px;
+    border: 1px dashed #ebebeb;
+    border-radius: 5px;
+}
+.ctaTitle {
+    margin-bottom: 8px;
+    font-weight: 300;
+    font-size: 22px;
+}
+.ctaAbout {
+    color: #6084a4;
+    font-weight: 300;
+    font-size: 15px;
+}
+.contactNowBtn {
     color: #FFF;
     font-weight: 700;
     padding: 14.5px 30px;
@@ -65,8 +94,7 @@
     background-color: transparent;
     z-index: 2;
 }
-
-.invoicingBtn:after, .invoicingBtn:before {
+.contactNowBtn:after, .contactNowBtn:before {
     content: "";
     position: absolute;
     left: 0;
@@ -78,69 +106,12 @@
     border-radius: 4px;
     transition: 0.5s;
 }
-
-.invoicingBtn:after {
+.contactNowBtn:after {
     background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
     opacity: 0;
     visibility: hidden;
 }
-
-.invoicingBtn:hover:after {
+.contactNowBtn:hover:after {
     opacity: 1;
     visibility: visible;
-}
-
-.desktopImage {
-    z-index: 2;
-}
-
-.mainMobileImage {
-    display: none;
-}
-
-.circleImage {
-    z-index: 1;
-    inset: 0;
-}
-
-.circleImage .circle1 {
-    top: -30px;
-    left: 50px;
-    position: absolute;
-    animation: moveLeftBounce 5s linear infinite;
-}
-
-.circleImage .circle2 {
-    right: 50px;
-    bottom: -30px;
-    position: absolute;
-    animation: moveBounce 5s linear infinite;
-}
-
-@keyframes moveBounce {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(20px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-@keyframes moveLeftBounce {
-    0% {
-        transform: translateX(0px);
-    }
-
-    50% {
-        transform: translateX(20px);
-    }
-
-    100% {
-        transform: translateX(0px);
-    }
 }
