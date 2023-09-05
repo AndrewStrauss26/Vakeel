@@ -1,0 +1,47 @@
+.footerArea{
+    padding: 70px 0 0;
+    z-index: 2;
+    background-color: #f7fafd;
+}
+.footerComponent{
+    gap: 15px;
+}
+.singleWidgetBox{
+    width: calc(25% - 15px);
+}
+.singleFooterWidget{
+    gap: 20px;
+}
+.footerWidgetTitle{
+    font-size: 22px;
+    font-weight: 300;
+    font-family: "Raleway", sans-serif;
+    color: #000;
+}
+.siteDesc{
+    font-size: 14.5px;
+    color: #6084a4;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.footerLinks span, .footerContactInfo span{
+    color: #6084a4;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 14.5px;
+}
+.footerContactInfo strong{
+    color: #6084a4;
+}
+.footerLinks li, .footerContactInfo li{
+    margin-bottom: 10px;
+}
+.copyrightArea{
+    border-top: 1px solid #d8ebfd;
+    margin-top: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #6084a4;
+    font-weight: 300;
+    font-size: 14.5px;
+}

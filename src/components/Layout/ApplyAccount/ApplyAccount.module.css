@@ -1,0 +1,69 @@
+.applyAccountBox{
+    background: linear-gradient(90deg, rgb(238, 9, 121) 0%, rgb(255, 106, 0) 100%);
+    padding: 100px 0;
+    z-index: 2;
+}
+.applyAccountBox::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.2;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../../../assets/images/bg_lines.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200%;
+}
+.accountContent{
+    gap: 20px;
+}
+.accountTitle{
+    color: #ffffff;
+    max-width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+}
+.accountSubText{
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.ApplyAccountBtn {
+    color: #FFF;
+    font-weight: 700;
+    padding: 14.5px 30px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    background-color: transparent;
+    z-index: 2;
+}
+.ApplyAccountBtn:after, .ApplyAccountBtn:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.ApplyAccountBtn:after {
+    background: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+}
+.talkBtn:hover:after {
+    opacity: 1;
+    visibility: visible;
+}

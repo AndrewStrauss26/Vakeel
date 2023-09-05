@@ -11,25 +11,25 @@ import ArrowNext from "../../../assets/images/next.png";
 
 export const FeedBack = () => {
   function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
+    const { onClick } = props;
     return (
       <button
         onClick={onClick}
         className={`${styles.nextArrow} position-absolute slick-arrow`}
       >
-        <img src={ArrowNext} />
+        <img src={ArrowNext} alt={ArrowNext} />
       </button>
     );
   }
 
   function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { onClick } = props;
     return (
       <button
         onClick={onClick}
         className={`${styles.prevArrow} position-absolute slick-arrow`}
       >
-        <img src={ArrowBack} />
+        <img src={ArrowBack} alt={ArrowBack} />
       </button>
     );
   }

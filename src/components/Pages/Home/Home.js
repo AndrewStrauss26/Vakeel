@@ -10,6 +10,10 @@ import { OurFeatures } from "../../Layout/OurFeatures/OurFeatures";
 import { EasyPayment } from "../../Layout/EasyPayment/EasyPayment";
 import { FunFact } from "../../Layout/FunFact/FunFact";
 import { FeedBack } from "../../Layout/FeedBack/FeedBack";
+import { RealTalk } from "../../Layout/RealTalk/RealTalk";
+import { PartnerArea } from "../../Layout/PartnerArea/PartnerArea";
+import { ApplyAccount } from "../../Layout/ApplyAccount/ApplyAccount";
+import { Footer } from "../../Layout/Footer/Footer";
 
 export const Home = () => {
   return (
@@ -25,6 +29,10 @@ export const Home = () => {
       <EasyPayment />
       <FunFact />
       <FeedBack />
+      <RealTalk />
+      <PartnerArea />
+      <ApplyAccount />
+      <Footer />
     </React.Fragment>
   );
 };

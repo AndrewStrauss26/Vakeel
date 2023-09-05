@@ -1,0 +1,21 @@
+.partnerArea{
+    top: -120px;
+    z-index: 2;
+}
+.partnerAreaTitle{
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 300;
+}
+.partnerInner{
+    margin-top: 20px;
+    background: #ffffff;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 3px;
+    padding: 5px 30px 30px;
+    min-height: 220px;
+}
+.partnerLogo{
+    width: 16%;
+    padding: 0 15px;
+}
